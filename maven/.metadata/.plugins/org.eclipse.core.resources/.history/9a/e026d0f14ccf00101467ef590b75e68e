@@ -1,0 +1,22 @@
+package com.beans;
+
+import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+@Entity
+@Table(name="course11")
+public class Course {
+	@Id
+private int cid;
+private String cname;
+private Double Cprice;
+private LocalDate startDate;
+@OneToMany(mappedBy="cset")
+Set<Student>set=new HashSet<Student>();
+
+}

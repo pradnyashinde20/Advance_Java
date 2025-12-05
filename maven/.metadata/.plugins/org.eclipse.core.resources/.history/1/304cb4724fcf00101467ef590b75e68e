@@ -1,0 +1,64 @@
+package com.beans;
+
+import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+@Entity
+@Table(name="student11")
+public class Student {
+	@Id
+private int sid;
+private String sname;
+private LocalDate cstartdate;
+@OneToMany
+Set<Course>cset=new HashSet<Course>();
+public Student() {
+	super();
+	// TODO Auto-generated constructor stub
+}
+
+public Student(int sid, String sname, LocalDate cstartdate, Set<Course> cset) {
+	super();
+	this.sid = sid;
+	this.sname = sname;
+	this.cstartdate = cstartdate;
+	this.cset = cset;
+}
+public int getSid() {
+	return sid;
+}
+public void setSid(int sid) {
+	this.sid = sid;
+}
+public String getSname() {
+	return sname;
+}
+public void setSname(String sname) {
+	this.sname = sname;
+}
+public LocalDate getCstartdate() {
+	return cstartdate;
+}
+public void setCstartdate(LocalDate cstartdate) {
+	this.cstartdate = cstartdate;
+}
+public Set<Course> getCset() {
+	return cset;
+}
+public void setCset(Set<Course> cset) {
+	this.cset = cset;
+}
+@Override
+public String toString() {
+	return "Student [sid=" + sid + ", sname=" + sname + ", cstartdate=" + cstartdate + ", cset=" + cset + "]";
+}
+
+
+
+
+}

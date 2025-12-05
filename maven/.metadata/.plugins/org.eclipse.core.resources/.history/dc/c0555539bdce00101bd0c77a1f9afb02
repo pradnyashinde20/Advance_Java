@@ -1,0 +1,26 @@
+package com.test;
+
+import java.time.LocalDate;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.beans.Department;
+
+public class TestOneToMany {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+SessionFactory sf=new Configuration().configure().buildSessionFactory();
+Session session=sf.getCurrentSession();
+Transaction tr=session.beginTransaction();
+Department d1=new Department(1,"gaming","pune");
+Department d2=new Department(2,"hr","pune");
+Department d3=new Department(3,"manager","pune");
+Employee e1=new Employee(11,"abc",LocalDate.of(2020, 05, 04),45000,d1);
+
+	}
+
+}

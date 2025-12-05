@@ -1,0 +1,11 @@
+package Aop;
+@Component
+@Aspect
+public class MyAdvice {
+	@Before("execution(*.com.bean.M*.m*(..))")
+	public void beforeAdvice()
+	{
+		System.out.println("before advice");
+	}
+
+}

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\IET\Desktop\maven\MyAnnotationConfiguration\src\main\resources\springconfig.xml"/>
+			<item value="C:\Users\IET\Desktop\maven\EmbedableDemo\src\main\java\com\beans\MyUser.java"/>
+			<item value="C:\Users\IET\Desktop\maven\MyFirstAnnotationDemo\src\main\java\com\demo\test\TestMyUser.java"/>
+			<item value="C:\Users\IET\Desktop\maven\mydemo"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.demo"/>
+			<item value="com.bean"/>
+		</list>
+		<list key="name">
+			<item value="ResourceBundlingDemo"/>
+			<item value="AopDemo"/>
+			<item value="MyAnnotationConfiguration"/>
+			<item value="autowiredDemo"/>
+			<item value="InheritedTablePerClass"/>
+			<item value="MappedBySuperClassInheritance"/>
+			<item value="InheritanceJoinTable"/>
+			<item value="InheritanceSingleTable"/>
+			<item value="CriteriaQueryDemo"/>
+			<item value="OneToMany2"/>
+		</list>
+		<list key="artifactId">
+			<item value="ResourceBundlingDemo"/>
+			<item value="AopDemo"/>
+			<item value="MyAnnotationConfiguration"/>
+			<item value="autowiredDemo"/>
+			<item value="InheritedTablePerClass"/>
+			<item value="MappedBySuperClassInheritance"/>
+			<item value="InheritanceJoinTable"/>
+			<item value="InheritanceSingleTable"/>
+			<item value="SpringHelloWorldDemo"/>
+			<item value="CriteriaQueryDemo"/>
+			<item value="OneToMany2"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

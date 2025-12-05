@@ -1,0 +1,8 @@
+package com.demo.beans;
+
+public class MyUser {
+private int uid;
+private String uname;
+private String email;
+private Address addr;
+}

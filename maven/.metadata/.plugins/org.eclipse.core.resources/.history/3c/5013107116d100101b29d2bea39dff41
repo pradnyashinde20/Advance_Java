@@ -1,0 +1,9 @@
+package com.demo.beans;
+
+public class Skill {
+private int skid;
+private String skname;
+private int experiance;
+
+
+}

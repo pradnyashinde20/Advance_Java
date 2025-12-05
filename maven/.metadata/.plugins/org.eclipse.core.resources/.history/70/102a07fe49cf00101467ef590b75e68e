@@ -1,0 +1,18 @@
+package com.demo.dao;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.demo.beans.Project;
+
+public class ProjectDaoImpl implements ProjectDao {
+
+	public void save(Project p) {
+		// TODO Auto-generated method stub
+		Session session=sf.openSession();
+		Transaction tr=session.beginTransaction();
+		tr.commit();
+		session.close();
+	}
+
+}

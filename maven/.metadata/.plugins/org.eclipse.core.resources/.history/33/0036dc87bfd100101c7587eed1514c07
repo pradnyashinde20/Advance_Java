@@ -1,0 +1,14 @@
+package com.demo.config;
+
+import org.springframework.context.support.ResourceBundleMessageSource;
+
+public class MyConfiguration {
+
+	public ResourceBundleMessageSource getMessageSource() {
+		ResourceBundleMessageSource rms = new ResourceBundleMessageSource();
+		rms.setBasename("messages");
+		return rms;
+		
+	}
+	
+}

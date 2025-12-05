@@ -1,0 +1,12 @@
+package com.demo.test;
+
+import org.hibernate.cfg.Configuration;
+
+public class GetData {
+
+	public static void main(String[] args) {
+	 SessionFactory sf = new Configuration().configure().buildSessionFactory();
+	
+	}
+
+}

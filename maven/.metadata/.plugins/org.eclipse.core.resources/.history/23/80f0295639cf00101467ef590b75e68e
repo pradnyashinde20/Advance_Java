@@ -1,0 +1,11 @@
+package com.demo.beans;
+
+import java.time.LocalDate;
+
+public class Employee {
+private int eid;
+private String ename;
+private LocalDate hiredate;
+private double sal;
+Set<Project>pset;
+}

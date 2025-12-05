@@ -1,0 +1,20 @@
+package com.demo.beans;
+
+import java.time.LocalDate;
+import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="project22")
+public class Project {
+	@Id
+private int pid;
+private String pname;
+private LocalDate startdate;
+@ManyToMany(mappedBy="pset",cascade=CascadeType.ALL)
+Set<Employee> eset;
+}

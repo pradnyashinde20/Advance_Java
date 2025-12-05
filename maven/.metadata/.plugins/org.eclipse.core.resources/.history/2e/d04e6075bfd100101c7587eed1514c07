@@ -1,0 +1,9 @@
+package com.demo.config;
+
+public class MyConfiguration {
+
+	public ResourceBundleMessageSource getMessageSource() {
+		ResourceBundleMessageSource
+	}
+	
+}

@@ -1,0 +1,13 @@
+package com.demo.beans;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Product {
+	@Value("12")
+private int pid;
+private String pname;
+private int qty;
+private double price;
+private Category category;
+}

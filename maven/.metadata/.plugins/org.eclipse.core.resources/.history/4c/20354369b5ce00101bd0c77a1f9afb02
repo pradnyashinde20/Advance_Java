@@ -1,0 +1,28 @@
+package com.test;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.beans.MyUser;
+
+public class TestMyUser {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+SessionFactory sf=new  Configuration().configure().buildSessionFactory();
+Session session=sf.openSession();
+Transaction tr=session.beginTransaction();
+System.out.println("before get");
+MyUser u1=session.get(MyUser.class,2);
+System.out.println("after get");
+System.out.println(u1);
+tr.commit();
+session.close();
+sf.close();
+
+
+	}
+
+}

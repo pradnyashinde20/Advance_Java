@@ -1,0 +1,20 @@
+package com.demo.beans;
+
+import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+@Entity
+@Table(name="project33")
+public class Project {
+	@Id
+private int pid;
+private String pname;
+private LocalDate StartDate;
+Set<Employee>est=new HashSet<Employee>();
+
+
+}

@@ -1,0 +1,10 @@
+package com.demo.test;
+
+public class TestData {
+
+	public static void main(String[] args) {
+	ApplicationContext ctx = new ClassPathXmlApplicationContext("springconfig.xml");
+
+	}
+
+}

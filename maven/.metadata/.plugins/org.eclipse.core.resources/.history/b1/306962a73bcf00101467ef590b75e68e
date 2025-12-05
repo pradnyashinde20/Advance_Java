@@ -1,0 +1,25 @@
+package com.demo.test;
+
+import java.time.LocalDate;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+public class TestData {
+
+	public static void main(String[] args) {
+		SessionFactory sf = new Configuration().configure().buildSessionFactory();
+		Session session = sf.openSession();
+		Transaction tr = session.beginTransaction();
+		Employee e1 = new Employee(1,"shiv",LocalDate.of(2022, 05, 04),50000);
+		
+		
+		tr.commit();
+		session.close();
+		sf.close();
+	
+	}
+
+}

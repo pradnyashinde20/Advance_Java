@@ -1,0 +1,23 @@
+package com.test;
+
+import java.time.LocalDate;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.beans.Student;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+SessionFactory sf=new Configuration().configure().buildSessionFactory();
+Session session=sf.openSession();
+Transaction tr=session.beginTransaction();
+Course c1=new Course(11,"java",LocalDate.of(12, 04, 2014));
+Student s=new Student(1,"abc",LocalDate.of(12, 03, 2012),c1);
+	}
+
+}

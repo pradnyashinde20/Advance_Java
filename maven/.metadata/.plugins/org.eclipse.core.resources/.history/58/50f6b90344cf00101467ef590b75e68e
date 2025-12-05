@@ -1,0 +1,15 @@
+package com.demo.test;
+
+import java.util.Scanner;
+
+import com.demo.service.EmployeeService;
+
+public class TestEmployeeCrudDemo {
+
+	public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    EmployeeService eservice = new EmployeeSeviceImpl();
+
+	}
+
+}

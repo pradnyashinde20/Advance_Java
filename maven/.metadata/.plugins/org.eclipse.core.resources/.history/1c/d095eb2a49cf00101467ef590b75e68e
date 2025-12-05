@@ -1,0 +1,10 @@
+package com.demo.dao;
+
+public class HibernateUtil {
+	static sessionFactory sf=null;
+	public static sessionFactory getMySessionFactory()
+	{
+		
+	}
+
+}
