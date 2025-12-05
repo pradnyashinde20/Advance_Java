@@ -1,0 +1,23 @@
+package com.servlet;
+
+import java.io.IOException;
+import java.time.LocalDate;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class AddProduct extends HttpServlet{
+	public void doPost(HttpServletRequest req,HttpServletResponse resp)throws ServletException,IOException
+	{
+		int pid=Integer.parseInt(req.getParameter("pid"));
+		String pname=req.getParameter("pname");
+		int qty=Integer.parseInt(req.getParameter("qty"));
+		double price=Double.parseDouble(req.getParameter("price"));
+		String dt=req.getParameter("expdate");
+		LocalDate d=LocalDate.parse(dt,)
+		
+	}
+
+}

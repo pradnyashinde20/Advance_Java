@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" import="java.util.List, com.demo.beans.Product"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+List<Product> plist = (List<Product>) request.getAttribute("plist");
+%>
+<form action="placeorder.jsp">
+ <button type="submit" name ="order" id="order" >Place Order</button>
+</form>
+
+<%
+for(Product p : plist){%>
+<div>
+<form action="addtocart">
+Product id : <%=p.getPid() %><br/>
+</form>
+</div>
+	
+}
+
+</body>
+</html>

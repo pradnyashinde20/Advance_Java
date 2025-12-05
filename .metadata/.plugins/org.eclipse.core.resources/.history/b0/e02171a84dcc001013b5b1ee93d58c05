@@ -1,0 +1,28 @@
+package com.dao;
+
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.util.List;
+
+import com.bean.Product;
+
+public class ProductDaoImpl implements ProductDao {
+	static Connection conn = null;
+	static PreparedStatement selproduct;
+	static {
+		conn=DBUtil.getMyConnection();
+		try {
+			
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public List<Product> findAllProducts() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

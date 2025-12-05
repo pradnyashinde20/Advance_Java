@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+String fnm = "kishori";
+String lnm = "khadilkar";
+%>
+
+<h1>Hello We are designing custom tags</h1>
+<hello:myhellotag  fname="<%=fnm %>" lname="<%=lnm %>"></hello:myhellotag>
+</body>
+</html>

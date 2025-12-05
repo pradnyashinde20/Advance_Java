@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+int pid = Integer.parseInt(request.getParameter("pid"));
+String pname = request.getParameter("pname");
+int qty = Integer.parseInt(request.getParameter("qty"));
+double price = Double.parseDouble(request.getParameter("price"));
+%>
+<jsp:useBean id="p" class="com.demo.beans.Product"></jsp:useBean>
+<jsp:setProperty property="*" name="p"/>
+</body>
+</html>

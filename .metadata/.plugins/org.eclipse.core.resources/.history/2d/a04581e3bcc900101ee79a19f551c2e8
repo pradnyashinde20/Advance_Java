@@ -1,0 +1,17 @@
+package com.demo.dao;
+
+import java.sql.Connection;
+import java.util.List;
+
+public class ProductDaoImpl implements ProductDao {
+	static Connection conn;
+	 static {
+			conn= DBUtil.getMyConnection();
+		}
+	@Override
+	public List<Integer> findAllCategory() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

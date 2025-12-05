@@ -1,0 +1,8 @@
+package snippet;
+
+public class Snippet {
+	public static void main(String[] args) {
+		mysql --host=192.168.10.117 --port=3306 --user=dac1 --password=welcome
+	}
+}
+

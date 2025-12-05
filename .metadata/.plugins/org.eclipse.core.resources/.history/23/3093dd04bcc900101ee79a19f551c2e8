@@ -1,0 +1,8 @@
+package com.demo.service;
+
+public class ProductServiceImpl implements ProductService{
+   private ProductDao pdao;
+   public ProductServiceImpl() {
+	   pdao= new ProductDaoImpl();
+   }
+}

@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+enter num1: <input type="text" name="num1" value="num1"><br/>
+enter num2: <input type="text" name="num2" value="num2"><br/>
+<button type="submit" value="add"> addition</button>
+<button type="submit" value="sub"> substraction</button>
+<button type="submit" value="mul"> multiplication</button>
+<button type="submit" value="div"> division</button>
+
+</form>
+</body>
+</html>

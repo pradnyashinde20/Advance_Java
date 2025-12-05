@@ -1,0 +1,15 @@
+package com.demo.dao;
+
+import java.sql.Connection;
+
+import com.demo.beans.MyUser;
+
+public class LoginDaoImpl implements LoginDao {
+ static  Connection conn;
+
+@Override
+public MyUser checkUser(String uname, String pass) {
+	// TODO Auto-generated method stub
+	return null;
+}
+}

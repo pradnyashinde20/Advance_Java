@@ -1,0 +1,10 @@
+package com.demo.service;
+
+public class LoginServiceImpl implements LoginService{
+	private LoginDao ldao;
+	
+	public LoginServiceImpl() {
+		ldao=new LoginDaoImpl();
+	}
+
+}

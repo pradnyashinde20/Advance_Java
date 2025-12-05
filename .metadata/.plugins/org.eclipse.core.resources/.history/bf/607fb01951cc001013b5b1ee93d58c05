@@ -1,0 +1,15 @@
+package com.servlet;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class DeleteProduct extends HttpServlet {
+	 public void doGet(HttpServletRequest req,HttpServletResponse resp)throws IOException, ServletException{
+		 int pid=Integer.parseInt(req.getParameter("pid"));
+	 }
+
+}

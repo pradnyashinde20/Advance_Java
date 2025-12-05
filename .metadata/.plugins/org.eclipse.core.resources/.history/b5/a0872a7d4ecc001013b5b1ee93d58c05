@@ -1,0 +1,29 @@
+package com.dao;
+
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.List;
+
+import com.bean.Product;
+
+public class ProductDaoImpl implements ProductDao {
+	static Connection conn = null;
+	static PreparedStatement selproduct;
+	static {
+		conn=DBUtil.getMyConnection();
+		try {
+			 selproduct=conn.prepareStatement("select * from product1");
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public List<Product> findAllProducts() {
+    List<Product>plist = new ArrayList<>();
+		return null;
+	}
+
+}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="CookiesDemo">
+Name:<input type="text" name="nm" id="nm"></br>
+value:<input type="text" name="val" id="val"></br>
+<button type="submit" name="btn" id="btn">submit</button>
+</form>
+</body>
+</html>
